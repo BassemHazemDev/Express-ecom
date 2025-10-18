@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+ 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI||'mongodb://localhost:27017/s1database');
+    await mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://progbasma:progbasma@cluster0.rctpl.mongodb.net/s1db');
     console.log('✅ MongoDB connected');
   } catch (err) {
     console.error('❌ MongoDB connection failed:', err);
